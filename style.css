@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(300, 2%, 12%);
+	font-size: 16px;
+	font-family: 'Outfit', serif;
+	font-optical-sizing: auto;
+	font-weight: 400px;
+}
+
+.container {
+	/* width: 250px; */
+	/* min-width: 150px; */
+	/* max-width: 250px; */
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin-top: 10px; to można dać jako odstęp od góry  */
+}
+
+.przepis {
+	background-color: hsl(330, 100%, 98%);
+	max-width: 375px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0px 30px 30px 30px;
+}
+
+.img-hero img {
+	height: 200px;
+	width: 375px;
+	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 20px 0;
+	/* text-align: center; */
+}
+
+.first-text {
+	color: hsl(332, 51%, 32%);
+	margin-bottom: 20px;
+}
+
+.preparation {
+	
+	/* padding: 40px; */
+	padding: 0 40px;
+	border-radius: 10px;
+	background-color: #eee6eb;
+	color: hsl(14, 45%, 36%);
+	
+}
+
+.preparation h3 {
+	color: black;
+	/* padding:20px; */
+	/* padding-bottom: 20px; */
+	margin: 20px 0;
+	margin-left: -10px;
+}
+
+.preparation li {
+	margin: 10px;
+}
+
+.preparation li:last-child {
+	padding-bottom: 5px;
+}
+.preparation span {
+	font-weight: bold;
+}
+
+.ingredients {
+	padding: 20px;
+	width: 100%;
+	
+}
+
+.ingredients h2 {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	font-style: normal;
+	color: hsl(14, 45%, 36%);
+	margin-left: -10px;
+	padding: 20px 0;
+}
+
+.ingredients ul {
+	margin-left: 20px;
+}
+
+.ingredients ul li {
+	padding: 5px;
+	color: hsl(14, 45%, 36%);
+}
+
+hr {
+	border: none; /* Usunięcie domyślnego stylu */
+	border-top: 1px solid #7e7d7d; /* Cienka linia */
+	margin-top: 25px; /* Odstępy nad i pod linią */
+}
+
+.instructions {
+	margin: 0 5px;
+	color: hsl(14, 45%, 36%);
+}
+
+.instructions h2 {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	font-style: normal;
+	color: hsl(14, 45%, 36%);
+	margin-left: -10px;
+	padding: 20px 10px;
+}
+
+.instructions li {
+	padding: 5px;
+	margin-left: 20px;
+}
+.instructions ol span {
+	font-weight: bold;
+}
+
+.nutrition {
+	padding: 10px;
+	color: hsl(14, 45%, 36%);
+	width: 100%;
+}
+
+.nutrition h2 {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	font-style: normal;
+	color: hsl(14, 45%, 36%);
+	margin-left: -10px;
+	padding: 20px 10px;
+}
+
+/* .nutrition table {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  } */
+
+.nutrition table {
+	width: 100%; /* Tabela zajmuje całą szerokość sekcji */
+	border-collapse: collapse;
+}
+
+.nutrition p {
+	margin-bottom: 20px;
+}
+
+/* Komórki tabeli */
+.nutrition table tr td {
+	padding: 10px 15px;
+	border-bottom: 1px solid #ddd;
+	font-size: 16px;
+	color: #333;
+}
+
+.nutrition td:nth-child(2) {
+	font-weight: bold;
+}
+
+.nutrition tr:last-child td {
+	border-bottom: none;
+}
+
+@media (min-width: 768px) {
+	.przepis {
+		
+		max-width: 768px;
+		align-items: flex-start;
+	}
+
+	.img-hero img {
+		height: 300px;
+		width: 678px;
+		border-radius: 15px;
+		margin-top: 25px;
+	}
+
+	.preparation {
+		width: 100%;
+	}
+
+	
+}
+
+@media (min-width: 1024px) {
+	.przepis {
+		/* border: 1px solid black; */
+		max-width: 1024px;
+		align-items: flex-start;
+	}
+
+	.img-hero img {
+		height: 400px;
+		width:  960px;
+		border-radius: 15px;
+		border: 1px solid black;
+	
+	}
+
+	.preparation {
+		width: 100%;
+	}
+
+	@media (min-width: 1440px) {
+		.przepis {
+			/* border: 1px solid black; */
+			max-width: 1440px;
+			align-items: flex-start;
+		}
+	
+		.img-hero img {
+			height: 500px;
+			width:  1240px;
+			border-radius: 15px;
+			border: 1px solid black;
+		
+		}
+	
+		.preparation {
+			width: 100%;
+		}
+	
+	}
+}
